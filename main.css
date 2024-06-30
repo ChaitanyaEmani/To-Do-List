@@ -1,5 +1,3 @@
-
-
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -10,8 +8,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	color: #FFF;
-	
+	background-color: rgb(37, 15, 37);
+	color: rgb(205, 5, 205);
 }
 
 header {
@@ -23,8 +21,7 @@ header {
 
 header h1{ 
 	font-size: 2.5rem;
-	font-weight: 300;
-	color: black;
+	font-weight: 500;
 	margin-bottom: 1rem;
 }
 
@@ -41,23 +38,23 @@ input, button {
 
 #new-task-input {
 	flex: 1 1 0%;
-	border: 2px solid green;
+	border: 2px solid rgb(205, 5, 205);
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-right: 1rem;
-	color: black;
 	font-size: 1.25rem;
+	color: #fff;
 }
 
 #new-task-input::placeholder {
-	color: green;
+	color: rgb(121, 17, 121);
 }
 
 #new-task-submit {
 	
 	font-size: 1.25rem;
 	font-weight: 700;
-	color: green;
+	color: rgb(205, 5, 205);
 	cursor: pointer;
 	transition: 0.4s;
 }
@@ -84,33 +81,40 @@ main {
 .task-list h2 {
 	font-size: 1.5rem;
 	font-weight: 300;
-	color: black;
+	color: rgb(205, 5, 205);
 	margin-bottom: 1rem;
+}
+
+#tasks{
+	margin-top: 1.5rem;
 }
 
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
-	border: 2px solid green;
+	border: 2px solid rgb(205, 5, 205);
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-bottom: 1rem;
+	
 }
 
 .task .content {
 	flex: 1 1 0%;
+	color: #fff;
 }
 
 .task .content .text {
-	color: black;
 	font-size: 1.125rem;
 	width: 100%;
 	display: block;
 	transition: 0.4s;
+	color: #fff;
+	font-weight: 50;
 }
 
 .task .content .text:not(:read-only) {
-	color: green;
+	color: rgb(205, 5, 205);
 }
 
 .task .actions {
@@ -136,9 +140,9 @@ main {
 }
 
 .task .actions .edit {
-	color: green;
+	color: rgb(205, 5, 205);
 }
 
 .task .actions .delete {
-	color: green;
+	color: rgb(205, 5, 205);
 }
